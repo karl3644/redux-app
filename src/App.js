@@ -1,6 +1,7 @@
 import React from 'react';
 import NewCounter from './features/counter/newCounter/newCounter';
 import './App.css';
+import Calculator from './features/ConnectAPI/Calculator';
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       <header className="App-header">
       <NewCounter />
       </header>
+      <div>
+        <Calculator />
+      </div>
     </div>
   );
 }

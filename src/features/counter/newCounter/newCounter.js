@@ -7,6 +7,7 @@ export default function NewCounter() {
   const { count, increment, decrement, setByAmount, reset } = useCounter()
   return (
     <div>
+    <h1>Counter app</h1>
         <p>Count: {count}</p>
         <button onClick={() => increment()}>add</button>
         <button onClick={() => decrement()}>subtract</button>
