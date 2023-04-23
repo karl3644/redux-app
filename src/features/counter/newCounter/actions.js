@@ -6,6 +6,7 @@ export const ADD_ITEM = "ADD_ITEM";
 export const REMOVE_ITEM = "REMOVE_ITEM";
 export const UPDATE_PRICE = "UPDATE_PRICE";
 export const UPDATE_QUANTITY = "UPDATE_QUANTITY";
+export const UPDATE_TIPPERCENTAGE = "UPDATE_TIPPERCENTAGE";
 
 // action creators
 export const increment = () => ({ type: INCREMENT });
@@ -23,5 +24,9 @@ export const updatePrice = (uuid, price) => ({
 export const updateQuantity = (uuid, quantity) => ({
   type: UPDATE_QUANTITY,
   payload: { uuid, quantity },
+});
+export const updateTipPercentage = (percentage) => ({
+  type: UPDATE_TIPPERCENTAGE,
+  payload: percentage,
 });
 export const reset = () => ({ type: RESET });

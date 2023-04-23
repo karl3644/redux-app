@@ -7,7 +7,6 @@ import {
 import MenuItem from "./MenuItem";
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  console.log("ownprops", ownProps.item.uuid);
   return {
     remove: () => dispatch(removeItem(ownProps.item.uuid)),
     updatePrice: (price) => dispatch(updatePrice(ownProps.item.uuid, price)),

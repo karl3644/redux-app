@@ -7,6 +7,7 @@ import {
   REMOVE_ITEM,
   UPDATE_PRICE,
   UPDATE_QUANTITY,
+  UPDATE_TIPPERCENTAGE,
 } from "./actions";
 
 // connect API
@@ -20,6 +21,7 @@ export const initialState = {
     { uuid: id++, name: "Store Tofu", price: 14, quantity: 1 },
     { uuid: id++, name: "Store Ham", price: 11, quantity: 1 },
   ],
+  tipPercentage: 0,
 };
 
 export const reducer = (state = initialState, action) => {
@@ -68,6 +70,12 @@ export const reducer = (state = initialState, action) => {
         }
         return item;
       }),
+    };
+  }
+  if (action.type === UPDATE_TIPPERCENTAGE) {
+    return {
+      ...state,
+      tipPercentage: action.payload,
     };
   }
 
