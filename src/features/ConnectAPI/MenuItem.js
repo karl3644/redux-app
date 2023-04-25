@@ -3,6 +3,7 @@ export default function MenuItem({
   updateQuantity = () => {},
   updatePrice = () => {},
   remove = () => {},
+  itemTotal = 0,
 }) {
   return (
     <div>
@@ -26,7 +27,7 @@ export default function MenuItem({
         value={item.quantity}
       ></input>
 
-      <span>Total:</span>
+      <span>Total:{itemTotal}</span>
       <button onClick={remove}>Remove</button>
     </div>
   );
