@@ -11,7 +11,7 @@ export default function MenuItem({
 
       <label htmlFor="price">Price</label>
       <input
-        type="text"
+        type="number"
         id="price"
         name="price"
         onChange={(e) => updatePrice(e.target.value)}
@@ -20,7 +20,7 @@ export default function MenuItem({
 
       <label htmlFor="quantity">Quantity</label>
       <input
-        type="text"
+        type="number"
         id="quantity"
         name="quantity"
         onChange={(e) => updateQuantity(e.target.value)}
